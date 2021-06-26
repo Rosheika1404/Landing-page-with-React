@@ -6,14 +6,18 @@ import Footer from "./footer";
 
 //create your first component
 export function Home() {
-    return (
-        <>
-        <Navbar />
-        <div className="text-center mt-5">
-            <Jumbotron />
-            <Cards />
-        </div>
-        <Footer />
-        </>
+	return (
+		<>
+			<Navbar />
+			<div className="container-fluid mt-4 mx-auto px-5">
+				<Jumbotron />
+				<div className="container">
+					<div className="row">
+						<Cards />
+					</div>
+				</div>
+			</div>
+			<Footer />
+		</>
 	);
 }
