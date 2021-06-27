@@ -11,10 +11,8 @@ export function Home() {
 			<Navbar />
 			<div className="container-fluid mt-4 mx-auto px-5">
 				<Jumbotron />
-				<div className="container">
-					<div className="row">
-						<Cards />
-					</div>
+				<div className="container-fluid mb-4 mx-auto px-5 mw-100">
+					<Cards />
 				</div>
 			</div>
 			<Footer />

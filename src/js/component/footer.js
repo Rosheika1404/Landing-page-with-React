@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
 	return (
-		<nav class="navbar fixed-bottom navbar-dark bg-dark text-white d-flex justify-content-center">
-			<p class="text-center">Copyright &copy; Your Website, 2018</p>
+		<nav className="navbar bottom navbar-dark bg-dark text-white d-flex justify-content-center h-75 p-4">
+			<p className="text-center">Copyright &copy; Your Website, 2018</p>
 		</nav>
 	);
 };
