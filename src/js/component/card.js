@@ -3,15 +3,12 @@ import { array } from "./constant";
 
 const Cards = () => {
 	return (
-		<div className="card-deck">
+		<div className="card-deck w-auto">
 			{array &&
 				array.map(element => {
 					return (
 						<>
-							<div
-								key={element.title}
-								className="card"
-								style={{ width: "18rem" }}>
+							<div key={element.title} className="card">
 								<img
 									className="card-img-top"
 									src={element.image}

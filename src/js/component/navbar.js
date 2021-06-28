@@ -19,7 +19,7 @@ const Navbar = () => {
 			</button>
 
 			<div className="collapse navbar-collapse" id="navbarNavDropdown">
-				<ul className="navbar-nav">
+				<ul className="navbar-nav d-flex justify-content-end">
 					<li className="nav-item active">
 						<a className="nav-link" href="#">
 							Home <span className="sr-only">(current)</span>

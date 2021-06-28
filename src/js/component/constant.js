@@ -16,7 +16,7 @@ export const array = [
 			"https://blog.wildix.com/wp-content/uploads/2020/06/react-logo.jpg",
 
 		discription:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu lacinia mi, id congue orci. Maecenas eleifend fringilla augue vel fringilla. ",
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu lacinia mi, id congue orci. Maecenas eleifend fringilla augue vel fringilla.",
 
 		goto: "https://www.w3schools.com/"
 	},
