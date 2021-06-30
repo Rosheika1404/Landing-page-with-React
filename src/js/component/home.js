@@ -11,8 +11,17 @@ export function Home() {
 			<Navbar />
 			<div className="container-fluid mt-4 mx-auto px-5">
 				<Jumbotron />
-				<div className="container-fluid mb-4 mx-auto px-5 mw-100">
-					<Cards />
+				<div className="container-fluid mb-4 mx-auto px-5 mw-100 ">
+					<div className="card-deck">
+						{array &&
+							array.map(element => (
+								<Cards
+									key={element.title}
+									title={element.image}
+									discription={element.discription}
+								/>
+							))}
+					</div>
 				</div>
 			</div>
 			<Footer />

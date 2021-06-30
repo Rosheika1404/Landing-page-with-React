@@ -18,7 +18,9 @@ const Navbar = () => {
 				<span className="navbar-toggler-icon"></span>
 			</button>
 
-			<div className="collapse navbar-collapse" id="navbarNavDropdown">
+			<div
+				className="collapse navbar-collapse justify-content-end"
+				id="navbarNavDropdown">
 				<ul className="navbar-nav d-flex justify-content-end">
 					<li className="nav-item active">
 						<a className="nav-link" href="#">

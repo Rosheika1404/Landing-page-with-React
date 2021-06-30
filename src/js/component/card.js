@@ -1,39 +1,36 @@
 import React from "react";
 import { array } from "./constant";
+import PropTypes from "prop-types";
 
-const Cards = () => {
+const Cards = (title, image, discription, goTo) => {
 	return (
-		<div className="card-deck w-auto">
-			{array &&
-				array.map(element => {
-					return (
-						<>
-							<div key={element.title} className="card">
-								<img
-									className="card-img-top"
-									src={element.image}
-									alt="Card image cap"
-								/>
-								<div className="card-body">
-									<h5 className="card-title">
-										{element.title}
-									</h5>
-									<p className="card-text">
-										{element.discription}
-									</p>
-								</div>
-								<div className="card-footer d-flex justify-content-center bg-white">
-									<a href="#" className="btn btn-primary">
-										Find Out More!
-									</a>
-								</div>
-							</div>
+		<>
+			<div key={title} className="card">
+				<img
+					className="card-img-top"
+					src={image}
+					alt="Card image cap"
+				/>
+				<div className="card-body">
+					<h5 className="card-title">{title}</h5>
+					<p className="card-text">{discription}</p>
+				</div>
+				<div className="card-footer d-flex justify-content-center bg-white">
+					<a href={goTo} className="btn btn-primary">
+						Find Out More!
+					</a>
+				</div>
+			</div>
 
-							<br />
-						</>
-					);
-				})}
-		</div>
+			<br />
+		</>
 	);
+};
+
+Cards.propTypes = {
+	title: PropTypes.object,
+	image: PropTypes.object,
+	discription: PropTypes.object,
+	goTo: PropTypes.object
 };
 export default Cards;
