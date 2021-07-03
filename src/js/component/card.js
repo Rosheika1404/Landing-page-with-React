@@ -3,7 +3,10 @@ import PropTypes from "prop-types";
 
 const Card = ({ title, image, discription, goTo, button }) => {
 	return (
-		<div key={title} className="card">
+		<div
+			key={title}
+			className="card"
+			style={{ width: "20rem", marginRight: "10px" }}>
 			<img className="card-img-top" src={image} alt="Card image cap" />
 			<div className="card-body">
 				<h5 className="card-title">{title}</h5>
@@ -14,17 +17,16 @@ const Card = ({ title, image, discription, goTo, button }) => {
 					{button}
 				</a>
 			</div>
-			<br />
 		</div>
 	);
 };
 
 Card.propTypes = {
-	title: PropTypes.object,
-	image: PropTypes.object,
-	discription: PropTypes.object,
-	button: Prototype.object,
-	goTo: PropTypes.object
+	title: PropTypes.string,
+	image: PropTypes.string,
+	discription: PropTypes.string,
+	button: PropTypes.string,
+	goTo: PropTypes.string
 };
 
 export default Card;
