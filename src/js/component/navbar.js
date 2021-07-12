@@ -2,8 +2,8 @@ import React from "react";
 
 const Navbar = () => {
 	return (
-		<nav className="navbar navbar-expand-lg  navbar-dark bg-dark">
-			<a className="navbar-brand" href="#">
+		<nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top mb-5">
+			<a className="navbar-brand pl-5" href="#">
 				Start Bootstrap
 			</a>
 
@@ -19,9 +19,9 @@ const Navbar = () => {
 			</button>
 
 			<div
-				className="collapse navbar-collapse justify-content-end"
+				className="collapse navbar-collapse justify-content-end pr-5"
 				id="navbarNavDropdown">
-				<ul className="navbar-nav d-flex justify-content-end">
+				<ul className="navbar-nav d-flex justify-content-end pr-5">
 					<li className="nav-item active">
 						<a className="nav-link" href="#">
 							Home <span className="sr-only">(current)</span>

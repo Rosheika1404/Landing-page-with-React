@@ -6,7 +6,11 @@ const Card = ({ title, image, discription, goTo, button }) => {
 		<div
 			key={title}
 			className="card"
-			style={{ width: "20rem", marginRight: "10px" }}>
+			style={{
+				width: "20rem",
+				marginRight: "20px",
+				marginLeft: "20px"
+			}}>
 			<img className="card-img-top" src={image} alt="Card image cap" />
 			<div className="card-body">
 				<h5 className="card-title">{title}</h5>
